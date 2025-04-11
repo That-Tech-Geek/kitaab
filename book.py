@@ -2,7 +2,7 @@ import cohere
 from docx import Document
 
 # Set up Cohere API client
-cohere_api_key = "WQr8zIfWIlVTjOz5yZNMcum8XTuH1ERs62OiZDkz"
+cohere_api_key = st.secrets("API_KEY")
 co = cohere.Client(cohere_api_key)
 
 # Get title and synopsis from user input
